@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NASDAQ Support & Resistance (2020–2025)</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        overflow: hidden;
-        font-family: Arial, sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NASDAQ S/R Analysis</title>
+  <style>
+    body {
+      background-color: #0e1117;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-      iframe {
-        width: 100%;
-        height: 100vh;
-        border: none;
-      }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
 
-      .fallback {
-        padding: 1rem;
-        text-align: center;
-        font-size: 1rem;
-      }
-    </style>
-  </head>
-  <body>
-    <iframe 
-      src="https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app" 
-      title="NASDAQ Support/Resistance Dashboard"
-    >
-      <!-- Fallback for browsers that don't support iframe -->
-      <div class="fallback">
-        <p>
-          If the app doesn't load, 
-          <a href="https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app" target="_blank">
-            click here to open it directly.
-          </a>
-        </p>
-      </div>
-    </iframe>
-  </body>
+    p {
+      margin-bottom: 2em;
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    a.button {
+      background-color: #f63366;
+      color: white;
+      padding: 14px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    a.button:hover {
+      background-color: #e0255c;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 NASDAQ Support/Resistance Project</h1>
+  <p>Click below to view the live Streamlit-powered dashboard.</p>
+  <a class="button" href="https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app" target="_blank">
+    Open Live App 🚀
+  </a>
+</body>
 </html>
