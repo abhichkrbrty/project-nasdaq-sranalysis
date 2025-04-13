@@ -3,51 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NASDAQ S/R Analysis</title>
+  <title>NASDAQ S/R Analysis Project</title>
   <style>
     body {
-      background-color: #0e1117;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
-
-    p {
-      margin-bottom: 2em;
-      font-size: 1.1em;
-      color: #ccc;
-    }
-
-    a.button {
-      background-color: #f63366;
+      background-color: #111;
       color: white;
-      padding: 14px 24px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding-top: 100px;
     }
-
-    a.button:hover {
-      background-color: #e0255c;
+    h1 {
+      font-size: 2.5rem;
+    }
+    .button {
+      background-color: #e91e63;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 40px;
+    }
+    .button:hover {
+      background-color: #ff4081;
+    }
+    .subtitle {
+      font-size: 1.1rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <h1>📊 NASDAQ Support/Resistance Project</h1>
-  <p>Click below to view the live Streamlit-powered dashboard.</p>
-  <a class="button" href="https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app" target="_blank">
-    Open Live App 🚀
+  <h1>📈 NASDAQ Support/Resistance Project</h1>
+  <p class="subtitle">Explore the historical S/R zones from 2020–2025</p>
+  <a href="https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app" target="_blank">
+    <button class="button">Open Streamlit App 🚀</button>
   </a>
 </body>
 </html>
