@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="refresh" content="0; url=https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app" />
-    <title>Redirecting to Nasdaq Support/Resistance</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASDAQ Support & Resistance (2020–2025)</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+
+      .fallback {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1rem;
+      }
+    </style>
   </head>
   <body>
-    <p>If you are not redirected automatically, <a href="https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app">click here</a>.</p>
+    <iframe 
+      src="https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app" 
+      title="NASDAQ Support/Resistance Dashboard"
+    >
+      <!-- Fallback for browsers that don't support iframe -->
+      <div class="fallback">
+        <p>
+          If the app doesn't load, 
+          <a href="https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app" target="_blank">
+            click here to open it directly.
+          </a>
+        </p>
+      </div>
+    </iframe>
   </body>
 </html>
