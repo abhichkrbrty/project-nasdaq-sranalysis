@@ -3,42 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NASDAQ S/R Analysis Project</title>
+  <title>NASDAQ Analysis Dashboard (2020–2025)</title>
   <style>
     body {
       background-color: #111;
       color: white;
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
       text-align: center;
-      padding-top: 100px;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 0.3em;
     }
-    .button {
+    .subtitle {
+      color: #ccc;
+      font-size: 1.2rem;
+      margin-bottom: 2em;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 16px;
+      max-width: 400px;
+      padding: 20px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    .card h3 {
+      margin-top: 15px;
+      font-size: 1.4rem;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #bbb;
+      margin-bottom: 1em;
+    }
+    .btn {
       background-color: #e91e63;
       color: white;
-      padding: 15px 30px;
-      font-size: 1.2rem;
+      padding: 10px 20px;
+      font-size: 1rem;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      margin-top: 40px;
+      text-decoration: none;
     }
-    .button:hover {
+    .btn:hover {
       background-color: #ff4081;
-    }
-    .subtitle {
-      font-size: 1.1rem;
-      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <h1>📈 NASDAQ Support/Resistance Project</h1>
-  <p class="subtitle">Explore the historical S/R zones from 2020–2025</p>
-  <a href="https://nasdaq-support-resistance-2gochmqxkubmszumyzp4cj.streamlit.app" target="_blank">
-    <button class="button">Open Streamlit App 🚀</button>
-  </a>
+  <h1>📊 NASDAQ Analysis Dashboard</h1>
+  <p class="subtitle">Interactive tools for visualizing trends, fear indexes, and reversal zones from 2020 to 2025</p>
+
+  <div class="grid">
+    <div class="card">
+      <img src="macd_divergence.png" alt="MACD Divergence">
+      <h3>MACD Divergence Detector</h3>
+      <p>Track MACD vs Signal line crossovers to detect bullish and bearish momentum shifts.</p>
+      <a class="btn" href="https://nasdaq-support-resistance-macddivergence.streamlit.app/" target="_blank">View Live</a>
+    </div>
+
+    <div class="card">
+      <img src="rsi_zones.png" alt="RSI Reversal Zones">
+      <h3>RSI Reversal Zones</h3>
+      <p>Identify overbought and oversold levels to spot potential reversals in market trends.</p>
+      <a class="btn" href="https://nasdaq-support-resistance-rsizones.streamlit.app/" target="_blank">View Live</a>
+    </div>
+
+    <div class="card">
+      <img src="sr_zones.png" alt="S/R Zones">
+      <h3>Support & Resistance Zones</h3>
+      <p>Analyze price behavior across weekly/monthly zones to map S/R bands dynamically.</p>
+      <a class="btn" href="https://nasdaq-support-resistance-srzones.streamlit.app/" target="_blank">View Live</a>
+    </div>
+
+    <div class="card">
+      <img src="vix_analysis.png" alt="VIX Volatility">
+      <h3>VIX Volatility Visualizer</h3>
+      <p>Study the fear index (VIX) over time to understand market volatility and investor sentiment.</p>
+      <a class="btn" href="https://nasdaq-support-resistance-vixanalysis.streamlit.app/" target="_blank">View Live</a>
+    </div>
+
+    <div class="card">
+      <img src="moving_avg_cross.png" alt="Moving Average">
+      <h3>Moving Average Crossover</h3>
+      <p>Visualize golden cross and death cross patterns to detect long-term trend shifts.</p>
+      <a class="btn" href="https://nasdaq-support-resistance-movingavgcross.streamlit.app/" target="_blank">View Live</a>
+    </div>
+  </div>
 </body>
 </html>
